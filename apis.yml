@@ -1,23 +1,94 @@
 aid: sixt
+
 name: Sixt
-description: 'Sixt is a company surfaced via the API Evangelist harvest backlog (source: travel) and added
-  to the network as a stub for full-pipeline profiling.'
+
+image: https://img.sixt.com/1200/506112ab-1eaf-40fd-b7ab-ef2dfef01cd5.jpg
+
+description: Sixt is a global mobility services provider offering car rental, ride‑hailing, and subscription services. With a heritage spanning
+  over a century, Sixt operates in more than 110 countries, delivering premium vehicles and flexible booking options through its website and mobile
+  apps. The company emphasizes digital transformation, providing customers with online reservations, fleet management, and a range of mobility
+  solutions tailored to business and leisure travelers.
+
 url: https://raw.githubusercontent.com/api-evangelist/sixt/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:travel
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-23 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-23'
+
 modified: '2026-09-23'
+
 tags:
 - Company
-apis: []
+- Mobility
+- Car Rental
+- Ride Hailing
+- Subscription
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Security
+  url: security/sixt-vulnerability-disclosure.yml
+- type: WellKnown
+  url: well-known/sixt-well-known.yml
+- type: Hosts
+  url: hosts/sixt-hosts.yml
+- type: Vendors
+  url: vendors/sixt-vendors.yml
+- type: SDKs
+  url: packages/sixt-packages.yml
+- type: Packages
+  url: packages/sixt-packages.yml
+- type: TermsOfService
+  url: https://www.sixt.com/terms-conditions/
+- type: Support
+  url: https://www.sixt.com/help-center/
+- type: SignUp
+  url: https://www.sixt.com/business/register/?register_type=signup&utm_source=sixt.com&utm_medium=retail-website-referral&utm_campaign=US_US_btob_HOME-BOTTOM-RT_RAC_ST_ENG&utm_content=Textlink-RegisterMyBusiness&utm_term=b2b_ref&product_type=undefined
+- type: PrivacyPolicy
+  url: https://www.sixt.com/pages/privacy/
+- type: Newsroom
+  url: https://about.sixt.com/en/newsroom/
+- type: Documentation
+  url: https://developers.sixt.com/
+- type: GitHubOrganization
+  url: https://github.com/Sixt
+- type: VulnerabilityDisclosure
+  url: security/sixt-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/sixt-domain-security.yml
 - type: Website
   url: https://sixt.com/
+
+apis:
+- name: Sixt API
+  description: API for Sixt mobility services, providing endpoints for rentals, reservations, and fleet management.
+  humanURL: https://developers.sixt.com/app/docs/
+  baseURL: null
+  aid: sixt:sixt-api
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Developer documentation page returns empty content, likely JS-rendered without a machine-readable spec.
+  evidence:
+  - url: https://developers.sixt.com/app/docs/
+    status: 200
+  checked: 2026-09-23
+x-enrichment:
+  date: '2026-09-23'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
