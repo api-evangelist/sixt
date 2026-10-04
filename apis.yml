@@ -55,7 +55,7 @@ common:
 - type: Support
   url: https://www.sixt.com/help-center/
 - type: SignUp
-  url: https://www.sixt.com/business/register/?register_type=signup&utm_source=sixt.com&utm_medium=retail-website-referral&utm_campaign=US_US_btob_HOME-BOTTOM-RT_RAC_ST_ENG&utm_content=Textlink-RegisterMyBusiness&utm_term=b2b_ref&product_type=undefined
+  url: https://www.sixt.com/business/register/?register_type=signup&product_type=undefined
 - type: PrivacyPolicy
   url: https://www.sixt.com/pages/privacy/
 - type: Newsroom
